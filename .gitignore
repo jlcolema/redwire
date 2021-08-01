@@ -1,0 +1,53 @@
+# Ignore everything in the root except the "wp-content" directory.
+
+app/public/*
+!app/public/wp-content/
+
+# Ignore everything in the "wp-content" directory, except:
+# "mu-plugins", "plugins", "themes" directory.
+
+app/public/wp-content/*
+# !app/public/wp-content/mu-plugins/
+# !wp-content/plugins/
+!app/public/wp-content/themes/
+
+# Ignore these plugins.
+
+app/public/wp-content/plugins/hello.php
+
+# Ignore specific themes.
+
+app/public/wp-content/themes/*
+!app/public/wp-content/themes/astra/
+!app/public/wp-content/themes/redwire/
+
+# Ignore theme assets directory.
+
+# app/public/wp-content/themes/redwire/assets/*
+
+# Ignore source files.
+
+# Nothing needed here yet.
+
+# Ignore node dependency directories
+
+node_modules/
+
+# Ignore log files and databases
+
+*.log
+*.sql
+*.sqlite
+
+# Title
+
+conf/
+logs/
+
+# Title
+
+*.code-workspace
+
+# Ignore OS generated files
+
+.DS_Store
