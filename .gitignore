@@ -47,7 +47,9 @@ logs/
 # Title
 
 *.code-workspace
+*.nova
 
 # Ignore OS generated files
 
 .DS_Store
+organize/
